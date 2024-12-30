@@ -71,7 +71,7 @@ header {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.2)
     ),
-    url("./images/backgroundd.png");
+    url("./images/background.png");
   background-position: center center;
   background-size: cover;
  max-height: 90vh;
