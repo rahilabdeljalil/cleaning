@@ -225,6 +225,112 @@
             border-radius: 20px;
             margin: 0 5px;
         }
+        /* Footer Container */
+.footer-container {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-logo-img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #2980b9;
+}
+
+.footer-social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social-link {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social-link:hover {
+  color: #2980b9;
+}
+
+.footer-bottom {
+  border-top: 1px solid #34495e;
+  padding-top: 20px;
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+}
+
+.footer-privacy {
+  margin-top: 10px;
+}
+
+.footer-privacy-link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-privacy-link:hover {
+  color: #2980b9;
+}
+
+.footer-privacy-separator {
+  margin: 0 10px;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo-img {
+    margin-bottom: 20px;
+  }
+
+  .footer-links-list {
+    margin-bottom: 20px;
+  }
+
+  .footer-social-list {
+    margin-bottom: 20px;
+  }
+}
+
 
         @media (max-width: 968px) {
             .cleaning-content-wrapper {
@@ -279,16 +385,16 @@
           <a href="./index.html"><img src="../../images/logo_high_quality.png" alt="" /></a>
         </div>
         <ul class="nav__links" id="nav-links">
-          <li class="link"><a href="../index.html">Home</a></li>
-          <li class="link"><a href="onas.html"> About Us</a></li>
-          <li class="link"><a href="servics.html">Services</a></li>
-          <li class="link">
-            <a href="servics.html">Dératisation & Désinsectisation</a>
-          </li>
-          <!-- <li class="link"><a href="./site/prix.html">Cennik</a></li> -->
-          <!-- <li class="link"><a href="./site/galery.html">Galeria</a></li> -->
-          <li class="link"><a href="contact.html">Contact</a></li>
-        </ul>
+            <li class="link"><a href="../../index.html">Home</a></li>
+            <li class="link"><a href="../onas.html"> About Us</a></li>
+            <li class="link"><a href="../servics.html">Services</a></li>
+            <li class="link">
+              <a href="../servics.html">Dératisation & Désinsectisation</a>
+            </li>
+            <!-- <li class="link"><a href="./site/prix.html">Cennik</a></li> -->
+            <!-- <li class="link"><a href="./site/galery.html">Galeria</a></li> -->
+            <li class="link"><a href="../contact.html">Contact</a></li>
+          </ul>
         <div class="nav__menu__btn" id="menu-btn">
           <span><i style="color: black" class="ri-menu-line"></i></span>
         </div>
@@ -303,70 +409,60 @@
       </nav>
     </header>
 
-    <div  style="margin-top: 120px" class="cleaning-services-container">
+    <div style="margin-top: 120px" class="cleaning-services-container">
         <div class="cleaning-breadcrumb">
             <a href="#" class="cleaning-breadcrumb-link">Accueil</a>
             <a href="#" class="cleaning-breadcrumb-link">Nos services</a>
-            <span>Nettoyage de bureaux et locaux professionnels</span>
+            <span>Petits et gros travaux</span>
         </div>
-
-        <h1 class="cleaning-main-title">Nettoyage de bureaux et locaux professionnels</h1>
-
+    
+        <h1 class="cleaning-main-title">Petits et gros travaux</h1>
+    
         <div class="cleaning-content-wrapper">
             <main class="cleaning-main-content">
                 <div class="cleaning-intro-text">
-                    <p>Projeter une image professionnelle positive de votre entreprise commence par un environnement impeccablement entretenu. Souhaitez-vous offrir à vos collaborateurs et clients un cadre de travail propre, accueillant et propice à la productivité?</p>
+                    <p>Besoin d’un coup de main pour vos travaux, qu’ils soient petits ou ambitieux? Confiez vos projets à des professionnels expérimentés qui sauront répondre à vos attentes, qu'il s'agisse d'interventions rapides ou de rénovations complètes.</p>
                 </div>
-
+    
                 <div class="cleaning-intro-text">
-                    <p>Faites confiance à <a href="#" class="cleaning-company-link">BSC Cleaning</a>, votre expert en entretien professionnel depuis 1995. Notre expertise en nettoyage de bureaux et d'espaces professionnels nous permet de dépasser vos attentes et celles de vos clients.</p>
+                    <p>Chez <a href="#" class="cleaning-company-link">La société F&Y SERVICES</a>, nous mettons à votre disposition une équipe polyvalente et qualifiée pour réaliser des travaux de toutes tailles avec efficacité et soin.</p>
                 </div>
-
-                
-
+    
                 <ul class="cleaning-clients-list">
-                    <p class="cleaning-intro-text">Nous intervenons auprès d'une clientèle diversifiée incluant :</p>
-                    <li class="cleaning-client-item">des immeubles et complexes de bureaux</li>
-                    <li class="cleaning-client-item">des établissements administratifs et institutionnels</li>
-                    <li class="cleaning-client-item">des commerces (boutiques, supermarchés, centres commerciaux)</li>
-                    <li class="cleaning-client-item">le secteur HORECA (hôtels et restaurants)</li>
-                    <li class="cleaning-client-item">des institutions financières (banques, assurances)</li>
-                    <li class="cleaning-client-item">des établissements scolaires</li>
-                    <li class="cleaning-client-item">des cabinets médicaux et centres de soins</li>
-                    <li class="cleaning-client-item">des sites industriels et entrepôts</li>
-                    <li class="cleaning-client-item">des centres de loisirs et complexes sportifs</li>
-                    <li class="cleaning-client-item">des ambassades et représentations diplomatiques</li>
-                    <li class="cleaning-client-item">des cabinets juridiques et études notariales</li>
+                    <p class="cleaning-intro-text">Nous intervenons pour divers types de travaux :</p>
+                    <li class="cleaning-client-item">réparations et ajustements mineurs</li>
+                    <li class="cleaning-client-item">peinture et rafraîchissement des murs</li>
+                    <li class="cleaning-client-item">pose de revêtements de sol (carrelage, parquet, moquette)</li>
+                    <li class="cleaning-client-item">rénovation de pièces spécifiques (salle de bain, cuisine)</li>
+                    <li class="cleaning-client-item">montage de meubles et équipements</li>
+                    <li class="cleaning-client-item">petits travaux électriques et de plomberie</li>
+                    <li class="cleaning-client-item">aménagement extérieur (terrasses, clôtures, jardinage)</li>
                 </ul>
-
+    
                 <div class="cleaning-services-section">
-                    <h2 class="cleaning-services-title">Des prestations sur mesure</h2>
-                    <p class="cleaning-intro-text">Nous vous garantissons :</p>
+                    <h2 class="cleaning-services-title">Un accompagnement sur mesure</h2>
+                    <p class="cleaning-intro-text">Nous vous proposons :</p>
                     <ul class="cleaning-services-list">
-                        <li class="cleaning-client-item">un planning personnalisé selon vos besoins</li>
-                        <li class="cleaning-client-item">une équipe de nettoyage qualifiée</li>
-                        <li class="cleaning-client-item">une organisation flexible des prestations</li>
+                        <li class="cleaning-client-item">une étude personnalisée de vos besoins</li>
+                        <li class="cleaning-client-item">une estimation transparente des coûts</li>
+                        <li class="cleaning-client-item">des délais respectés</li>
+                        <li class="cleaning-client-item">une qualité d'exécution garantie</li>
                     </ul>
                 </div>
-
+    
                 <div class="cleaning-services-section">
-                    <p class="cleaning-intro-text">BSC Cleaning adapte ses services à vos exigences spécifiques. Notre planning est établi en fonction de vos contraintes! Nous proposons des services complémentaires :</p>
+                    <p class="cleaning-intro-text">Avec La société F&Y SERVICES, vos projets sont entre de bonnes mains. Notre expertise couvre un large éventail de travaux, toujours réalisés avec des matériaux de qualité et des techniques adaptées :</p>
                     <ul class="cleaning-services-list">
-                        <li class="cleaning-client-item">fourniture et installation de produits d'hygiène et distributeurs</li>
-                        <li class="cleaning-client-item">entretien spécialisé des sols (parquet, marbre, linoléum)</li>
-                        <li class="cleaning-client-item">nettoyage des vitres et surfaces vitrées</li>
-                        <li class="cleaning-client-item">préparation et nettoyage des salles de réunion</li>
-                        <li class="cleaning-client-item">gestion des déchets et recyclage</li>
-                        <li class="cleaning-client-item">enlèvement d'encombrants</li>
-                        <li class="cleaning-client-item">interventions ponctuelles ou urgentes</li>
-                        <li class="cleaning-client-item">service de déneigement</li>
+                        <li class="cleaning-client-item">travaux ponctuels ou sur projet</li>
+                        <li class="cleaning-client-item">équipe disponible pour des interventions urgentes</li>
+                        <li class="cleaning-client-item">approche respectueuse de votre espace et de vos besoins</li>
                     </ul>
                 </div>
-
+    
                 <div class="cleaning-contact-section">
                     <p class="cleaning-contact-text">
                         Des questions? Consultez notre <a href="#" class="cleaning-contact-link">FAQ</a>. 
-                        Pour un devis gratuit, contactez BSC Cleaning via 
+                        Pour un devis gratuit, contactez La société F&Y SERVICES via 
                         <a href="mailto:info@bsc-cleaning.be" class="cleaning-contact-link">info@bsc-cleaning.be</a>, 
                         notre <a href="#" class="cleaning-contact-link">formulaire en ligne</a>, 
                         ou appelez le numéro vert <span class="cleaning-phone-green">0800/250.615</span> 
@@ -374,28 +470,50 @@
                     </p>
                 </div>
             </main>
-
+    
             <aside class="cleaning-image-section">
-                <img src="../../images/service/bureauNettoyage.jpg" alt="Professional office cleaning" class="cleaning-service-image">
-                <img src="../../images/service/bureauNettoyage2.jpg" alt="Meeting room cleaning" class="cleaning-service-image">
+                <img src="../../images/service/gros.webp" alt="Petits travaux en cours" class="cleaning-service-image">
+                <img src="../../images/service/gros2.jpg" alt="Rénovation et gros travaux" class="cleaning-service-image">
             </aside>
         </div>
     </div>
-
     
-    <footer class="footer">
-        <div class="section__container footer__bar">
-          <div class="footer__logo">
-            <h4><a href="#">Matkam</a></h4>
-            <p>Copyright © 2024. Matkam All rights reserved.</p>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="your-logo-url.png" alt="Logo" class="footer-logo-img" />
           </div>
-          <ul class="footer__nav">
-            <li class="footer__link"><a href="#">About</a></li>
-            <li class="footer__link"><a href="#">Partnership</a></li>
-            <li class="footer__link"><a href="#">Privacy Policy</a></li>
-          </ul>
+      
+          <div class="footer-links">
+            <ul class="footer-links-list">
+              <li><a href="#" class="footer-link">Accueil</a></li>
+              <li><a href="#" class="footer-link">Nos Services</a></li>
+              <li><a href="#" class="footer-link">À Propos</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-social">
+            <ul class="footer-social-list">
+              <li><a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p class="footer-bottom-text">&copy; 2024 VotreEntreprise. Tous droits réservés.</p>
+          <div class="footer-privacy">
+            <a href="#" class="footer-privacy-link">Mentions légales</a>
+            <span class="footer-privacy-separator">|</span>
+            <a href="#" class="footer-privacy-link">Politique de confidentialité</a>
+          </div>
         </div>
       </footer>
+      
   
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
