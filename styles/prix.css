@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.service {
+  padding-top: 220px;
+  margin: 72px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.service h1 {
+  text-align: center;
+  color: black;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-bottom: 22px;
+}
+.service p {
+  font-size: 25px;
+  color: #71717a;
+  text-align: center;
+  width: 80%;
+  line-height: 35px;
+  display: block;
+  margin: 0 auto;
+  font-family:"Lora", serif;
+  margin-bottom: 0px;
+}
+.table {
+  border: 1px solid rgb(227, 227, 227);
+  margin: 163px;
+  margin-top: 73px;
+  background-color: #fffcfc;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+caption {
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+table {
+  padding-bottom: 300px;
+  width: 90%;
+  border-collapse: collapse;
+
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin: 40px;
+}
+th,
+td {
+  padding: 10px;
+  padding-right: 13px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+th {
+  background-color: #979595;
+  color: #fff;
+}
+tr:hover {
+  background-color: #444;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  table {
+    font-size: 10px;
+  }
+  .table {
+    
+    border: 1px solid rgb(231, 228, 228);
+    margin: 3px;
+    margin-top: 73px;
+    background-color: #fffcfc;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    overflow-x:auto;
+
+  }
+  table {
+    padding-bottom: 300px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin: 0px;
+  }
+  th, td {
+    padding: 10px;
+    padding-right: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.service {
+  padding-top: 220px;
+  margin: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+caption {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+}

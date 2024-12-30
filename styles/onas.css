@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.Onas {
+    background-color: #fbfaf5;
+    margin: 22px;
+    padding: 22px;
+    box-shadow: 0px 0px 14px 0px rgba(166,161,161,0.55);  
+    border-radius: 9px;
+  }
+  .Onas h1 {
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    font-family:"Lora", serif;
+    margin-bottom: 22px;
+  }
+  .Onas .onas-text {
+    font-size: 25px;
+    color: #71717a;
+    text-align: center;
+    width: 80%;
+    line-height: 35px;
+    display: block;
+    margin: 0 auto;
+    font-family:"Lora", serif;
+    margin-bottom: 90px;
+  }
+  .Onas .our-boss{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .Onas .our-boss img{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 95%; /* Ensure the image fills the container */
+    height: 100%; /* Allow the image to maintain its aspect ratio */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+  .Onas .our-boss h2{
+    padding-top: 28px;
+    text-align: start;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Lora", serif;
+    margin-bottom: 22px;
+  }
+  .Onas .our-boss p{
+    font-size: 24px;
+    color: #71717a;
+    width: 100%;
+    line-height: 32px;
+    font-family:"Lora", sans-serif;
+    margin-bottom: 90px;
+  }
+  .procces h1{
+    margin-top: 120px;
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Lora", serif;
+    margin-bottom: 22px;
+  }
+   .procces .process-p {
+    font-size: 25px;
+    color: #71717a;
+    width: 90%;
+    line-height: 35px;
+    display: block;
+    margin: 0 auto;
+    font-family:"Lora", serif;
+    margin-bottom: 90px;
+  }
+  .implement {
+    margin: 42px;
+  }
+  .implement h2{
+    margin-top: 120px;
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    font-style: italic;
+    text-align: center;
+    font-family:"Lora", serif;
+    margin-bottom: 22px;
+  }
+  .implement p {
+    font-size: 25px;
+    color: #71717a;
+    width: 90%;
+    line-height: 35px;
+    font-family:"Lora", serif;
+    margin-bottom: 30px;
+  }
+  .implement ul  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top:53px;
+
+  }
+  .implement ul li {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-style: italic;
+  }
+  .implement ul li p {
+    color: #2f2f2f ;
+    font-family: sans-serif;
+   margin-bottom: 1px;
+   width: 100%;
+    font-size: 21px;
+  }
+  .implement ul li span {
+    list-style: none;
+    font-style: italic;
+    color: #5A8B41 ;
+
+  }
+  .small-line {
+    min-width: 11px;
+    height: 3px;
+    margin-top: 16px;
+    border-radius: 12px;
+    background-color: #2f2f2f;
+    margin-right: 9px;
+  }
+  @media(max-width:730px){
+    .Onas .our-boss {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+  .Onas .onas-text {
+    font-size: 25px;
+    color: #71717a;
+    text-align: center;
+    width: 100%;
+    line-height: 35px;
+    display: block;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+    margin-bottom: 90px;
+}
+.implement ul {
+  display: flex;
+  flex-direction: column;
+}
+  }

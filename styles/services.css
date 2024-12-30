@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.service {
+  padding-top: 220px;
+  margin: 72px;
+  margin-top: 0px;
+}
+.service h1 {
+  text-align: center;
+  color: #0e7a48;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Roboto", serif;
+  margin-bottom: 22px;
+}
+.service p {
+  font-size: 25px;
+  color: #71717a;
+  text-align: center;
+  width: 80%;
+  line-height: 35px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto", serif;
+  margin-bottom: 90px;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 99px;
+}
+.service-card img {
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.service-card h2{
+    text-align: start;
+  color: rgb(38, 38, 38);
+  font-size: 38px;
+  font-family:"Roboto", serif;
+  margin-bottom: 22px;
+  margin-top: 28px;
+}
+.service-card p{
+    font-size: 19px;
+    color: #71717a;
+    text-align: start;
+    width: 100%;
+    line-height: 35px;
+    font-family: "Roboto", serif;
+    margin-bottom: 50px;}
+    .service-card a {
+        border: 1px solid grey;
+        padding: 12px 22px;
+        border-radius: 20px;
+        color: green;
+    }
+    .service-card a:hover{
+        background-color: rgb(34, 128, 34);
+        color: white;
+        transition: 0.5s;
+        transform: translateY(-12px);
+    }
+    @media(max-width:740px){
+      .service-card {
+        display: flex;
+       flex-direction: column;
+       border: 1px solid grey;
+       padding: 20px;
+       border-radius: 5px;
+    }
+    .service {
+      padding-top: 220px;
+      margin: 22px;
+      margin-top: 0px;
+  }
+  .service-card h2 {
+    text-align: start;
+    color: rgb(38, 38, 38);
+    font-size: 38px;
+  
+    font-family: "Roboto", serif;
+    margin-bottom: 22px;
+    margin-top: 28px;
+}
+    }
