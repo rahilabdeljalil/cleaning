@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../styles/services.css" />
+    <link rel="icon"  href="../images/baricon.png" type="image/icon type">
+    <title>Matkam</title>
+    <style>
+        .cleaning-services-container {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px;
+            background: linear-gradient(to bottom, #f8fafc, #ffffff);
+        }
+
+        .cleaning-breadcrumb {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .cleaning-breadcrumb-link {
+            color: #0e7a48;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .cleaning-breadcrumb-link:hover {
+            color: #2980b9;
+        }
+
+        .cleaning-breadcrumb-link::after {
+            content: "›";
+            margin: 0 10px;
+            color: #95a5a6;
+        }
+
+        .cleaning-main-title {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 35px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .cleaning-main-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+
+        .cleaning-content-wrapper {
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .cleaning-main-content {
+            flex: 2;
+        }
+
+        .cleaning-intro-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 25px;
+            padding: 25px 0px;
+            border-radius: 15px;
+        }
+
+        .cleaning-company-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .cleaning-company-link:hover {
+            border-bottom-color: #3498db;
+        }
+
+        .cleaning-clients-list {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin: 30px 0;
+        }
+
+        .cleaning-client-item {
+            list-style: none;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 38px;
+
+            color: #34495e;
+            transition: transform 0.3s ease;
+        }
+
+        .cleaning-client-item:hover {
+            transform: translateX(5px);
+        }
+
+        .cleaning-client-item::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 10px;
+            font-size: 1.5em;
+            line-height: 1;
+        }
+
+        .cleaning-services-section {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .cleaning-services-title {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cleaning-services-title::before {
+            content: "";
+            width: 6px;
+            height: 24px;
+            background: #3498db;
+            border-radius: 3px;
+        }
+
+        .cleaning-image-section {
+            flex: 1;
+            position: sticky;
+            top: 30px;
+            height: fit-content;
+        }
+
+        .cleaning-service-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+            border: 4px solid white;
+        }
+
+        .cleaning-service-image:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .cleaning-contact-section {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            padding: 35px;
+            border-radius: 20px;
+            margin-top: 40px;
+            color: white;
+        }
+
+        .cleaning-contact-text {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .cleaning-contact-link {
+            color: white;
+            text-decoration: none;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cleaning-contact-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .cleaning-phone-green {
+            color: #2ecc71;
+            font-weight: bold;
+            padding: 4px 12px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            margin: 0 5px;
+        }
+
+        .cleaning-phone-regular {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 968px) {
+            .cleaning-content-wrapper {
+                gap: 30px;
+            }
+            
+            .cleaning-services-section {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cleaning-content-wrapper {
+                flex-direction: column;
+            }
+            
+            .cleaning-image-section {
+                position: relative;
+                top: 0;
+                order: -1;
+            }
+            
+            .cleaning-main-title {
+                font-size: 28px;
+            }
+            
+            .cleaning-services-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cleaning-services-container {
+                padding: 20px;
+            }
+            
+            .cleaning-main-title {
+                font-size: 24px;
+            }
+            
+            .cleaning-breadcrumb {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__logo">
+          <a href="./index.html"><img src="../../images/logo_high_quality.png" alt="" /></a>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="../index.html">Home</a></li>
+          <li class="link"><a href="onas.html"> About Us</a></li>
+          <li class="link"><a href="servics.html">Services</a></li>
+          <li class="link">
+            <a href="servics.html">Dératisation & Désinsectisation</a>
+          </li>
+          <!-- <li class="link"><a href="./site/prix.html">Cennik</a></li> -->
+          <!-- <li class="link"><a href="./site/galery.html">Galeria</a></li> -->
+          <li class="link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i style="color: black" class="ri-menu-line"></i></span>
+        </div>
+        <div class="nav__actions">
+          <span
+            ><a href="./index.html"><i class="ri-search-fill"></i></a
+          ></span>
+          <span
+            ><a href="./index.html"><i class="ri-user-fill"></i></a
+          ></span>
+        </div>
+      </nav>
+    </header>
+
+    <div  style="margin-top: 120px" class="cleaning-services-container">
+        <div class="cleaning-breadcrumb">
+            <a href="#" class="cleaning-breadcrumb-link">Accueil</a>
+            <a href="#" class="cleaning-breadcrumb-link">Nos services</a>
+            <span>Nettoyage de bureaux et locaux professionnels</span>
+        </div>
+
+        <h1 class="cleaning-main-title">Nettoyage de bureaux et locaux professionnels</h1>
+
+        <div class="cleaning-content-wrapper">
+            <main class="cleaning-main-content">
+                <div class="cleaning-intro-text">
+                    <p>Projeter une image professionnelle positive de votre entreprise commence par un environnement impeccablement entretenu. Souhaitez-vous offrir à vos collaborateurs et clients un cadre de travail propre, accueillant et propice à la productivité?</p>
+                </div>
+
+                <div class="cleaning-intro-text">
+                    <p>Faites confiance à <a href="#" class="cleaning-company-link">BSC Cleaning</a>, votre expert en entretien professionnel depuis 1995. Notre expertise en nettoyage de bureaux et d'espaces professionnels nous permet de dépasser vos attentes et celles de vos clients.</p>
+                </div>
+
+                
+
+                <ul class="cleaning-clients-list">
+                    <p class="cleaning-intro-text">Nous intervenons auprès d'une clientèle diversifiée incluant :</p>
+                    <li class="cleaning-client-item">des immeubles et complexes de bureaux</li>
+                    <li class="cleaning-client-item">des établissements administratifs et institutionnels</li>
+                    <li class="cleaning-client-item">des commerces (boutiques, supermarchés, centres commerciaux)</li>
+                    <li class="cleaning-client-item">le secteur HORECA (hôtels et restaurants)</li>
+                    <li class="cleaning-client-item">des institutions financières (banques, assurances)</li>
+                    <li class="cleaning-client-item">des établissements scolaires</li>
+                    <li class="cleaning-client-item">des cabinets médicaux et centres de soins</li>
+                    <li class="cleaning-client-item">des sites industriels et entrepôts</li>
+                    <li class="cleaning-client-item">des centres de loisirs et complexes sportifs</li>
+                    <li class="cleaning-client-item">des ambassades et représentations diplomatiques</li>
+                    <li class="cleaning-client-item">des cabinets juridiques et études notariales</li>
+                </ul>
+
+                <div class="cleaning-services-section">
+                    <h2 class="cleaning-services-title">Des prestations sur mesure</h2>
+                    <p class="cleaning-intro-text">Nous vous garantissons :</p>
+                    <ul class="cleaning-services-list">
+                        <li class="cleaning-client-item">un planning personnalisé selon vos besoins</li>
+                        <li class="cleaning-client-item">une équipe de nettoyage qualifiée</li>
+                        <li class="cleaning-client-item">une organisation flexible des prestations</li>
+                    </ul>
+                </div>
+
+                <div class="cleaning-services-section">
+                    <p class="cleaning-intro-text">BSC Cleaning adapte ses services à vos exigences spécifiques. Notre planning est établi en fonction de vos contraintes! Nous proposons des services complémentaires :</p>
+                    <ul class="cleaning-services-list">
+                        <li class="cleaning-client-item">fourniture et installation de produits d'hygiène et distributeurs</li>
+                        <li class="cleaning-client-item">entretien spécialisé des sols (parquet, marbre, linoléum)</li>
+                        <li class="cleaning-client-item">nettoyage des vitres et surfaces vitrées</li>
+                        <li class="cleaning-client-item">préparation et nettoyage des salles de réunion</li>
+                        <li class="cleaning-client-item">gestion des déchets et recyclage</li>
+                        <li class="cleaning-client-item">enlèvement d'encombrants</li>
+                        <li class="cleaning-client-item">interventions ponctuelles ou urgentes</li>
+                        <li class="cleaning-client-item">service de déneigement</li>
+                    </ul>
+                </div>
+
+                <div class="cleaning-contact-section">
+                    <p class="cleaning-contact-text">
+                        Des questions? Consultez notre <a href="#" class="cleaning-contact-link">FAQ</a>. 
+                        Pour un devis gratuit, contactez BSC Cleaning via 
+                        <a href="mailto:info@bsc-cleaning.be" class="cleaning-contact-link">info@bsc-cleaning.be</a>, 
+                        notre <a href="#" class="cleaning-contact-link">formulaire en ligne</a>, 
+                        ou appelez le numéro vert <span class="cleaning-phone-green">0800/250.615</span> 
+                        ou le <span class="cleaning-phone-regular">02/410.53.58</span>.
+                    </p>
+                </div>
+            </main>
+
+            <aside class="cleaning-image-section">
+                <img src="../../images/service/bureauNettoyage.jpg" alt="Professional office cleaning" class="cleaning-service-image">
+                <img src="../../images/service/bureauNettoyage2.jpg" alt="Meeting room cleaning" class="cleaning-service-image">
+            </aside>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="section__container footer__bar">
+          <div class="footer__logo">
+            <h4><a href="#">Matkam</a></h4>
+            <p>Copyright © 2024. Matkam All rights reserved.</p>
+          </div>
+          <ul class="footer__nav">
+            <li class="footer__link"><a href="#">About</a></li>
+            <li class="footer__link"><a href="#">Partnership</a></li>
+            <li class="footer__link"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </footer>
+  
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="../../main.js"></script>
+    </body>
+  </html>
+  
