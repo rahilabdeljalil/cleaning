@@ -742,7 +742,7 @@ footer a:hover {
   .nav__links {
     position: absolute;
     left: 0;
-    top: 139px;
+    top: 80px;
     padding: 2rem;
     width: 100%;
     flex-direction: column;
